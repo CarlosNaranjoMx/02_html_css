@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- <script scr="./js/01_parser.js"></script> -->
-    <script src="js/02_generar_md.js"></script>
-    
+    <!-- <script type="module" src="/js/02_generar_md.js"></script> -->
 </head>
 <body>
     <h1 class="section-heading"><span class="margin-text">Tipo de cambio</span></h1>
@@ -19,6 +18,7 @@
         <input type="number" id="amount" name="amount" min="0" step="0.01" style="margin:1rem 1rem 0rem 1rem;" required>
         <button type="submit" name="submit" style="margin:1rem 1rem 1rem 1rem;" >Convertir</button>
         </form>
+    </div>
     <div id="result"></div>  
     <script>
         document.getElementById('currency-form').addEventListener('submit', function(event) {
@@ -44,6 +44,7 @@
         });
     </script> 
 
+    <script src="js/02_generar_md.js"></script>
     <input type="text" id="urlInput" placeholder="Ingresa la URL aquí">
     <button onclick="generarMarkdown()">Generar Markdown</button>
     <div id="resultado"></div>
